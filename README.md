@@ -24,6 +24,7 @@ sudo apt-key add erlang_solutions.asc
 ```bash
 sudo apt update
 sudo apt install elixir
+sudo apt-get install esl-erlang
 ```
 ```bash
 sudo ln -s /usr/local/bin/iex /usr/bin/iex
@@ -67,10 +68,8 @@ npm install
 #### Config Changes
 ```ex
 # /config/dev.exs
-# Line 52
+# In the postgres section
 username: "pi",
-
-#Line 53
 password: [The password you setup in the Postgres install],
 ```
 
